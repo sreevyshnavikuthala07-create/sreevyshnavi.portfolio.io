@@ -1,0 +1,61 @@
+/* Custom properties for a modern look */
+:root {
+    --primary: #6366f1;    /* Indigo */
+    --secondary: #a855f7;  /* Purple */
+    --accent: #ec4899;     /* Pink */
+    --dark: #0f172a;       /* Slate 900 */
+    --light: #f8fafc;      /* Slate 50 */
+}
+
+/* Smooth Scrolling for a premium feel */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Modern alternative to Calibri */
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Gradient text effect for headings */
+.gradient-text {
+    background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Advanced Card Hover Effects for Projects and Experience */
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-hover:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    background-color: white;
+}
+
+/* Custom Navigation Blur */
+.nav-blur {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Timeline design for Professional Experience */
+.timeline-dot {
+    transition: all 0.3s ease;
+}
+
+.relative:hover .timeline-dot {
+    transform: scale(1.5);
+    box-shadow: 0 0 15px var(--primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-7xl { font-size: 3rem; }
+    .py-24 { padding-top: 4rem; padding-bottom: 4rem; }
+}
